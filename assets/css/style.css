@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny:100,200,300,400,500,600,700');
+
+/*------------------------------ Main Structure ------------------------------*/
+
+html, 
+body,
+main{
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding:0;
+}
+
+section {
+    display:block;
+    height:100%;
+    width:100%;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#index {
+    background: url(../images/monkees.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+}
+
+#music {
+    background-color: rgb(243,208,18);
+}
+
+#events {
+    background-color: rgb(205,228,49);
+}
+
+#news {
+    background-color: rgb(135,218,224);
+}
+
+#hire {
+    background-color: rgb(252,78,154);
+}
+
+
+/*----------------------------- Section - Index -----------------------------*/
+
+.column-menu {
+    display: table;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding:0;
+}
+
+.button-menu {
+    display: table-cell;
+    font-family: 'Coiny', cursive;
+    font-weight: 700;
+    font-size: 5vw;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+    height: 50%;
+}
+
+.button-menu.music {
+    color: rgba(243,208,18,0.9);
+}
+
+.button-menu.music:hover {
+    color: rgb(5,48,69);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(243,208,18,0.5);
+}
+
+.button-menu.events {
+    color: rgba(205,228,49,0.9);
+}
+
+.button-menu.events:hover {
+    color: rgb(5,48,69);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(205,228,49,0.5);
+}
+
+.button-menu.news {
+    color: rgba(135,218,224,0.9);
+}
+
+.button-menu.news:hover {
+    color: rgb(5,48,69);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(135,218,224,0.5);
+}
+
+.button-menu.hire {
+    color: rgba(252,78,154,0.9);
+}
+
+.button-menu.hire:hover {
+    color: rgb(5,48,69);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(252,78,154,0.5);
+}
+
+/*--------------------- Section - Index - Small Devices ---------------------*/
+
+@media only screen and (max-width: 768px){
+    .column-menu {
+        display: table;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding:0;
+    }
+
+    .button-menu {
+        display: table;
+        font-family: 'Coiny', cursive;
+        font-weight: 700;
+        font-size: 10vw;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .span-menu {
+        display:table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .button-menu.music {
+        color: rgb(5,48,69);
+        background-color: rgba(243,208,18,0.5);
+    }
+
+    .button-menu.events {
+        color: rgb(5,48,69);
+        background-color: rgba(205,228,49,0.5);
+    }
+    
+    .button-menu.news {
+        color: rgb(5,48,69);
+        background-color: rgba(135,218,224,0.5);
+    }
+    
+    
+    .button-menu.hire {
+        color: rgb(5,48,69);
+        background-color: rgba(252,78,154,0.5);
+    }
+}
