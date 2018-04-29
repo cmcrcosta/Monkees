@@ -48,6 +48,116 @@ a {
     background-color: rgb(252,78,154);
 }
 
+/*------------------------------ Navigation Bar ------------------------------*/
+
+nav {
+    position: fixed; 
+    z-index:7;
+    display: table;
+    margin:0 auto;
+    padding:0;
+    font-size: 0;
+    width: 100%;
+    height:10%;
+    background-color: rgb(38,37,37);
+}
+
+nav ul {
+    display: table;
+    margin:0 auto;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+nav ul li { 
+    display: table-cell;
+    width:20%;
+    height:100%;
+    font-family: 'Coiny', cursive;
+    font-weight: 700;
+    font-size: 1.75vw;
+    text-align: center;
+    vertical-align: middle;
+    line-height:200%;
+}
+
+nav ul li a { 
+    display: block;
+}
+
+.li-index {
+    color: rgba(173,43,173,0.9);
+}
+
+.li-index:hover {
+    color: rgb(255,255,255);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(173,43,173,0.5);
+}
+
+.li-music {
+    color: rgba(243,208,18,0.9);
+}
+
+.li-music:hover {
+    color: rgb(255,255,255);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(243,208,18,0.5);
+}
+
+.li-events {
+    color: rgba(205,228,49,0.9);
+}
+
+.li-events:hover {
+    color: rgb(255,255,255);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(205,228,49,0.5);
+}
+
+.li-news {
+    color: rgba(135,218,224,0.9);
+}
+
+.li-news:hover {
+    color: rgb(255,255,255);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(135,218,224,0.5);
+}
+
+.li-hire {
+    color: rgba(252,78,154,0.9);
+}
+
+.li-hire:hover {
+    color: rgb(255,255,255);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    background-color: rgba(252,78,154,0.5);
+}
+
+/*---------------------- Navigation Bar - Small Devices ----------------------*/
+
+@media only screen and (max-device-width: 767px){
+nav ul li { 
+    font-size: 2.5vw;
+}
+}
 
 /*----------------------------- Section - Index -----------------------------*/
 
@@ -124,7 +234,7 @@ a {
 
 /*--------------------- Section - Index - Small Devices ---------------------*/
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-device-width: 767px){
     .column-menu {
         display: table;
         width: 100%;
@@ -163,9 +273,14 @@ a {
         background-color: rgba(135,218,224,0.5);
     }
     
-    
     .button-menu.hire {
         color: rgb(5,48,69);
         background-color: rgba(252,78,154,0.5);
     }
+}
+
+@media only screen and (orientation: landscape) {
+        .button-menu {
+        font-size: 5vw;
+        }
 }
